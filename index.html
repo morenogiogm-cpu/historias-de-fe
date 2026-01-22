@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Historias de fe y vida cristiana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #111;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background-color: #111;
+      background-image: url("portada.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .contenido {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .logo {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      max-width: 140px;
+      z-index: 2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="contenido">
+      <h1>Historias de fe y vida cristiana</h1>
+      <p>
+        Un espacio de fe cristiana católica, vivencias e historias bíblicas
+        para fortalecer el alma.
+      </p>
+    </div>
+
+    <img src="logo.png" alt="Jeovanny Moreno Vega" class="logo">
+  </section>
+
+</body>
+</html>
